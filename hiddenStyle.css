@@ -1,0 +1,42 @@
+.one{
+  float:right;
+  display: block;
+  clear: left;
+  padding-bottom: 50px;
+
+}
+.two{
+  display: inline-block;
+  height: 35%;
+  width:40%;
+  vertical-align: top;
+
+}
+.second{
+  float:right;
+  width:80%;
+  height:35%;
+}
+table{
+  display: inline-block;
+  clear:right;
+  float: right;
+  width:40%;
+  vertical-align: top;
+}
+.line{
+  fill:none;
+  stroke:black;
+}
+.students{
+  width:5%;
+  height: 100%;
+  float:left;
+  display: inline;
+  position: fixed;
+  overflow-y: scroll;
+  padding-left: 20px;
+}
+img{
+  width:100%;
+}
