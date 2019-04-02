@@ -353,6 +353,9 @@ var initialize = function(data, day, student){
      .call(xAxis)
      .attr("transform", "translate("+(margins.left)+","+(margins.top+height)+")");
 
+  var legend = svg.append("g")
+                  .classed("legend",true)
+                  .attr("transform","translate("+(width+margins.left)+","+margins.top+")");
 
   var selectorBar = d3.select('.students');
 
