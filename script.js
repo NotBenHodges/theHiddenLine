@@ -353,10 +353,6 @@ var initialize = function(data, day, student){
      .call(xAxis)
      .attr("transform", "translate("+(margins.left)+","+(margins.top+height)+")");
 
-  var legend = svg.append("g")
-                  .classed("legend",true)
-                  .attr("transform","translate("+(width+margins.left)+","+margins.top+")");
-
   var selectorBar = d3.select('.students');
 
   selectorBar.selectAll('img').data(data).enter()
@@ -369,4 +365,13 @@ var initialize = function(data, day, student){
                console.log('student: '+i)
                update(data,0,i);})
 
+
+
+  d3.select(".a").on("click",function(d){
+    svg.select('.area').classed("hidden",true);
+  });
+/*
+d3.select(".l").on("mouseover",function(d){
+  var eraseLine =
+}) */
 }
