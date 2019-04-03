@@ -366,12 +366,20 @@ var initialize = function(data, day, student){
                update(data,0,i);})
 
 
-
   d3.select(".a").on("click",function(d){
     svg.select('.area').classed("hidden",true);
   });
-/*
-d3.select(".l").on("mouseover",function(d){
-  var eraseLine =
-}) */
+
+  d3.select(".l").on("click",function(d){
+    svg.select('.area').classed("hidden",false);
+  });
+
+  d3.select(".p").on("click",function(d){
+    svg.select('.line').classed("hidden",true);
+  });
+
+  d3.select(".o").on("click",function(d){
+    svg.select('.line').classed("hidden",false);
+  });
+
 }

@@ -17,7 +17,7 @@
   width:80%;
   height:35%;
 }
-.a,.l{
+.a,.l,.p,.o{
   display: inline-block;
   clear:right;
   float: right;
@@ -39,4 +39,8 @@
 }
 img{
   width:100%;
+}
+
+.hidden{
+  opacity: 0;
 }
