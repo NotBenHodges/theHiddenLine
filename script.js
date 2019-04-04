@@ -365,7 +365,7 @@ var initialize = function(data, day, student){
                console.log('student: '+i)
                update(data,0,i);})
 
-
+//This section adds or removes the hidden class
   d3.select(".a").on("click",function(d){
     svg.select('.area').classed("hidden",true);
   });
@@ -375,7 +375,7 @@ var initialize = function(data, day, student){
   });
 
   d3.select(".p").on("click",function(d){
-    svg.select('.line').classed("hidden",true);
+    svg.select('.line').classed("hidden",true);S
   });
 
   d3.select(".o").on("click",function(d){
